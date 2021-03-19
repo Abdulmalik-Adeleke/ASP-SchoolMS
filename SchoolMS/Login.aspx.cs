@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Web.Security;
 using System.Security.Cryptography;
 using System.IO;
@@ -13,6 +14,7 @@ using System.Configuration;
 using System.Text;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json.Serialization;
+using System.Threading.Tasks;
 
 namespace SchoolMS
 {
@@ -20,9 +22,7 @@ namespace SchoolMS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-            myh1.InnerText = "Current Term: " + Application["term"].ToString();
-
+            myh1.InnerText = "Term: " + Application["term"].ToString();
         }
 
         protected void Submit_Click(object sender, EventArgs e)

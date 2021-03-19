@@ -17,6 +17,12 @@
             font-variant: small-caps; 
            
         }
+        td{
+            padding:0;
+        }
+        td > div{
+            width:100px;
+        }
     </style>
 </head>
 <body>
@@ -29,7 +35,9 @@
                     <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
                     <ItemStyle BackColor="lightgray" ForeColor="Black" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Size="Medium" Font-Strikeout="False" Font-Underline="False" />
                     <ItemTemplate>
-                        
+                        <div>
+
+
                         <p><asp:Label ID="SUBJECT_CODELabel" runat="server" Text='<%# Eval("SUBJECT_CODE") %>' /></p>
                                           
                                              
@@ -50,12 +58,14 @@
                         
                         <br />
                       --%>
+                            </div>
                     </ItemTemplate>
                     <SelectedItemStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
                 </asp:DataList>
                
             </div>
             <p>student home page</p>
+
         </div>
     </form>
 </body>
