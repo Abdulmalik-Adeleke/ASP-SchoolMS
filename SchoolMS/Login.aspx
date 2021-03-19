@@ -56,7 +56,7 @@
             <asp:CheckBox ID="remember" runat="server" Text="Remember me" />
             <br />
             <br />
-            <asp:Button ID="Submit" runat="server" Text="Login" OnClick="Submit_Click" OnClientClick="myFunction()" />
+            <asp:Button ID="Submit" runat="server" Text="Login" OnClick="Submit_Click" />
             <br />
             <br />
             <span><asp:Label ID="error" runat="server" ForeColor="Red"></asp:Label></span>   
